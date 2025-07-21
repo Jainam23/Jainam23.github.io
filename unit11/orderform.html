@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Product Order Form</title>
+</head>
+<body>
+
+<h2>Order Page</h2>
+
+<form action="http://webdevbasics.net/scripts/demo.php" method="post">
+
+  <p>
+    <label for="user">Username:</label>
+    <input type="text" id="user" name="user" maxlength="30">
+  </p>
+
+  <fieldset>
+    <legend>Favourite Month</legend>
+    <label><input type="radio" name="favMonth" value="Jan"> January</label>
+    <label><input type="radio" name="favMonth" value="Feb"> February</label>
+    <label><input type="radio" name="favMonth" value="Mar"> March</label>
+    <label><input type="radio" name="favMonth" value="Apr"> April</label><br>
+    <label><input type="radio" name="favMonth" value="May"> May</label><br>
+    <label><input type="radio" name="favMonth" value="Jun"> June</label><br>
+    <label><input type="radio" name="favMonth" value="Jul"> July</label><br>
+    <label><input type="radio" name="favMonth" value="Aug"> August</label><br>
+    <label><input type="radio" name="favMonth" value="Sep"> September</label><br>
+    <label><input type="radio" name="favMonth" value="Oct"> October</label><br>
+    <label><input type="radio" name="favMonth" value="Nov"> November</label><br>
+    <label><input type="radio" name="favMonth" value="Dec"> December</label>
+  
+  </fieldset>
+
+  <p>
+    <label for="social">Favourite Social Network:</label>
+    <select id="social" name="social">
+      <option value="facebook">Facebook</option>
+      <option value="instagram">Instagram</option>
+      <option value="tiktok">TikTok</option>
+    </select>
+  </p>
+
+  <fieldset>
+    <legend>Shipping Address</legend>
+    <p><label>Address Line 1 <input type="text" name="AddressLine1"></label></p>
+    <p><label>Address Line 2 <input type="text" name="AddressLine2"></label></p>
+    <p><label>City <input type="text" name="City" size="20"></label></p>
+    <p><label>State <input type="text" name="State" size="3" maxlength="2"></label></p>
+    <p><label>ZIP <input type="text" name="ZIP" size="10" maxlength="10"></label></p>
+  </fieldset>
+
+  <p>
+    <label for="pword">Password:</label>
+    <input type="password" id="pword" name="pword">
+  </p>
+
+  <input type="hidden" name="userid" value="ABC123">
+
+  <p>
+    <input type="image" src="signup-btn.png" alt="Submit order">
+  </p>
+</form>
+
+<p><a href="home.html">Back to Home</a></p>
+</body>
+</html>
