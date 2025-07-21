@@ -1,0 +1,25 @@
+#nav,
+#sidebar,
+#right-sidebar,
+#footer,
+#container > div:not(#header):not(#center) {  
+  display: none !important;
+}
+
+img {
+  display: none !important;
+}
+
+body {
+  font-size: 1.25em !important;
+}
+
+* {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+a[href]:after {
+  content: " (" attr(href) ")";
+  font-size: 0.9em;
+}
